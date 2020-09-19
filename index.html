@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.box1{
+			height: 760px;
+			width: 1700px;
+			background:yellow;
+		}
+		.box2{
+			height: 760px;
+			width: 1700px;
+			background:yellow;
+			display: none;
+		}
+		.box3{
+			height: 760px;
+			width: 1700px;
+			background:yellow;
+			display: none;
+		}
+		.false {
+			color: black;
+		}
+		.true {
+			color: black;
+		}
+
+	</style>
+</head>
+<body>
+<div class="box1">
+	<h1>Чем белый медведь питается в Антарктиде?</h1>
+	<img style="width:1700px; height: 700px;" src="1.jpg">
+	<div class="false"style="background:red; height:20px;" >
+		<p style="margin-top: 0px; margin-bottom: 0px;">Тюленями</p>
+	</div>
+	<div class="false2" style="background:orange; height: 20px;">
+		<p style="margin-top: 0px; margin-bottom: 0px;">Пингвинами</p>
+	</div>
+	<div class="true" style="background:pink;height: 20px;">
+		<p style="margin-top: 0px; margin-bottom: 0px;">Они не живут в Антарктиде</p>
+	</div>
+</div>
+<div class="box2">
+	<h1>Выберите наиболее логичное решение</h1>
+	<img style="width:1700px; height: 700px;" src="4.jpg">
+	<div class="false3"style="background:red; height:20px;" >
+		<p style="margin-top: 0px; margin-bottom: 0px;">Выпрыгнуть через окно</p>
+	</div>
+	<div class="true2" style="background:orange;height: 20px;">
+		<p style="margin-top: 0px; margin-bottom: 0px;">Окончить школу с отличием, найти интересную работу, жить счастливо</p>
+	</div>
+	<div class="false4" style="background:pink;height: 20px;">
+		<p style="margin-top: 0px; margin-bottom: 0px;">Пойти к богам смерти, и дать им яблоки</p>
+	</div>
+</div>
+<div class="box3">
+	<h1>Кто изображен на фотографии?</h1>
+	<img style="width:1700px; height: 700px;" src="3.jpg">
+	<div class="false5"style="background:red; height:20px;" >
+		<p style="margin-top: 0px; margin-bottom: 0px;">Томиока</p>
+	</div>
+	<div class="true3" style="background:orange;height: 20px;">
+		<p style="margin-top: 0px; margin-bottom: 0px;">Иносуке</p>
+	</div>
+	<div class="false6" style="background:pink;height: 20px;">
+		<p style="margin-top: 0px; margin-bottom: 0px;"> Незуко</p>
+	</div>
+</div>
+
+<script type="text/javascript">
+	//для первого вопроса 
+		document.querySelector('.true').onclick = function(){
+			alert("Правильно!");
+			document.querySelector('.box1').style.display = "none";
+			document.querySelector('.box2').style.display = "block";
+		}
+		document.querySelector ('.false').onclick = function(){
+			alert("Нет!");
+		}
+		document.querySelector ('.false2').onclick = function(){
+			alert("Нет!");
+		}
+	// для второго
+		document.querySelector('.true2').onclick = function(){
+			alert("Правильно!");
+			document.querySelector('.box2').style.display = "none";
+			document.querySelector('.box3').style.display = "block";
+		}
+		document.querySelector ('.false3').onclick = function(){
+			alert("Нет!");
+		}
+		document.querySelector ('.false4').onclick = function(){
+			alert("Нет!");
+		}
+	// для третьего вопроса
+		document.querySelector('.true3').onclick = function(){
+			alert("Правильно!");
+			document.querySelector('.box3').style.display = "none";
+		}
+		document.querySelector ('.false5').onclick = function(){
+			alert("Нет!");
+		}
+		document.querySelector ('.false6').onclick = function(){
+			alert("Нет!");
+		}
+</script>
+</body>
+</html>
